@@ -1,16 +1,27 @@
-
 <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        $received_data = $_POST["editor_content"];
-        
-        $command = 'python3 Converter/converter.py ' . escapeshellarg($received_data);
+        $hashmap_json = file_get_contents("php://input");
+        $hashmap = json_decode($hashmap_json, true);
+        $display_format = $hashmap["display_format"];
+        $output_str = "";
+        $command = "python3 Converter/converter.py ".escapeshellarg($hashmap_json);
         exec($command, $output);
         
-        $output_str = "";
-        for($i = 0;$i < count($output);$i++){
-            $output_str .= $output[$i]."\n";
+        if($display_format == "HTML"){
+            $output_temp = str_replace("<", "&lt;", $output);
+            $output_arr = str_replace(">", "&gt;", $output_temp);
+
+            $output_str .= "<code>";
+            for($i = 0;$i < count($output_arr);$i++){                
+                $output_str .= "<p>".$output_arr[$i]."</p>";
+            }
+            $output_str .= "</code>";
+        }
+        else{
+            for($i = 0;$i < count($output);$i++){
+                $output_str .= $output[$i]."\n";
+            }
         }
         echo $output_str;
-        exit;
     }
 ?>
