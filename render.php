@@ -11,11 +11,9 @@
             $output_temp = str_replace("<", "&lt;", $output);
             $output_arr = str_replace(">", "&gt;", $output_temp);
 
-            $output_str .= "<code>";
             for($i = 0;$i < count($output_arr);$i++){                
                 $output_str .= "<p>".$output_arr[$i]."</p>";
             }
-            $output_str .= "</code>";
         }
         else{
             for($i = 0;$i < count($output);$i++){
