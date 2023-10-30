@@ -29,17 +29,7 @@ https://github.com/Aki158/Markdown-to-HTML-Converter
 - Download : ボタンクリック時のエディタに表示されている文字列をHTMLとしてユーザーのPCにダウンロードする
 
 ## output
-### ウェブアプリケーションアクセス時
-[Todo] 画像をのせる
-
-### エディタ編集時
-[Todo] 画像をのせる
-
-### 3つの切り替えボタンを操作した時
-[Todo] 画像をのせる
-
-### Downloadボタンをクリックした時
-[Todo] 画像をのせる
+![image](https://github.com/Aki158/Markdown-to-HTML/assets/119317071/19117b95-de1b-446c-90ee-4b0c86e7136f)
 
 ## 使用方法
-[Todo] 本番環境にリリースしたurlを貼付ける
+https://markdown-to-html.aki158-website.blog
