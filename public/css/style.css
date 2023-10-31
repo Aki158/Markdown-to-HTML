@@ -1,0 +1,18 @@
+p {
+    margin-bottom: 0;
+}
+
+.editor-box {
+    height: 600px;
+    border: 1px solid grey
+}
+
+.scroll-box {
+    height: 600px;
+    border: 1px solid grey;
+    overflow-y: scroll;
+}
+
+.text-black {
+    color:black;
+}
