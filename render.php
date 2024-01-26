@@ -22,4 +22,3 @@
         }
         echo $output_str;
     }
-?>
