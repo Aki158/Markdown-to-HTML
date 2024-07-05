@@ -103,8 +103,11 @@ Markdownの記述からダウンロードまで全てオンラインで完結す
   <td>ライブラリ(コードエディタ) : Monaco Editor</td>
 </tr>
 <tr>
-  <td>バックエンド</td>
+  <td rowspan=2>バックエンド</td>
   <td>PHP</td>
+</tr>
+<tr>
+  <td>Python</td>
 </tr>
 <tr>
   <td rowspan=4>インフラ</td>
